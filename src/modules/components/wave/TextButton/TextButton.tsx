@@ -5,13 +5,15 @@ import {
   HStack,
   ComponentVariant,
   ComponentInvertedBackdrop,
+  ComponentHeaderWrapper,
 } from "../../styled";
 
 export const TextButtonPreview = () => {
   return (
     <VStack>
-      <ComponentHeader>Text Button</ComponentHeader>
-
+      <ComponentHeaderWrapper>
+        <ComponentHeader>TextButton</ComponentHeader>
+      </ComponentHeaderWrapper>
       <HStack>
         <VStack>
           <ComponentVariant>Default</ComponentVariant>

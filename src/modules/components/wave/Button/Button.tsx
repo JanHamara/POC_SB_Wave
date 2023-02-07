@@ -2,6 +2,7 @@ import { Button, TrashBinIcon } from "@freenow/wave";
 
 import {
   ComponentHeader,
+  ComponentHeaderWrapper,
   ComponentInvertedBackdrop,
   ComponentVariant,
   HStack,
@@ -11,7 +12,9 @@ import {
 export const ButtonPreview = () => {
   return (
     <VStack>
-      <ComponentHeader>Button</ComponentHeader>
+      <ComponentHeaderWrapper>
+        <ComponentHeader>Button</ComponentHeader>
+      </ComponentHeaderWrapper>
 
       <HStack>
         <VStack>

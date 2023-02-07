@@ -5,6 +5,13 @@ export const ComponentContainer = styled(Box).attrs({
   maxWidth: "30%",
   width: "30%",
 })``;
+export const ComponentHeaderWrapper = styled(Box).attrs({
+  pb: 4,
+  pt: 4,
+  mb: 4,
+})`
+  border-bottom: solid 0.0625rem #C6CDD4
+`;
 export const ComponentHeader = styled(Text).attrs({
   secondary: true,
   mb: 4,
