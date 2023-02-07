@@ -1,13 +1,13 @@
-import { Box, Colors, Headline, Logo, Spaces, Text } from "@freenow/wave";
+import { Box, Headline, Logo, Spaces, Text } from "@freenow/wave";
 import LayoutContainer from "../LayoutContainer/LayoutContainer";
 
 export const Header = () => {
   return (
-    <Box style={{ boxShadow: "0 0 15px #CCCCCC", background: Colors.WHITE, paddingTop: '2.5rem' }}>
-      <LayoutContainer>
+    <Box style={{ boxShadow: "0 0 15px #CCCCCC" }}>
+      <LayoutContainer style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Logo></Logo>
-          <Box display="flex">
+          <Box display="flex" alignItems='center'>
             <Headline as="h4">@freenow/wave</Headline>
             <Box
               width="1px"

@@ -1,7 +1,7 @@
 import { Accordion } from "@freenow/wave";
 
-import { MOCKS } from "../../../common/constants/global";
-import { ComponentHeader, VStack } from "../../styled";
+import { MOCKS } from "../../../../common/constants/global";
+import { ComponentHeader, VStack } from "../../../styled";
 
 export const AccordionPreview = () => {
   return (

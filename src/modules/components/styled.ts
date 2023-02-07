@@ -17,12 +17,16 @@ export const ComponentHeader = styled(Text).attrs({
   mb: 4,
   mt: 4,
   fontWeight: 700,
-})``;
+})`
+  color: #aaaaaa;
+`;
 export const ComponentVariant = styled(Text).attrs({
   secondary: true,
   fontSize: 1,
   mb: 2,
-})``;
+})`
+  color: #aaaaaa
+`;
 export const ComponentInvertedBackdrop = styled(Box).attrs({
   bg: "#bbbbbb",
   p: 2,

@@ -7,7 +7,7 @@ import {
   ComponentVariant,
   HStack,
   VStack,
-} from "../../styled";
+} from "../../../styled";
 
 export const ButtonPreview = () => {
   return (

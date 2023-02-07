@@ -6,7 +6,7 @@ import {
   ComponentVariant,
   ComponentInvertedBackdrop,
   ComponentHeaderWrapper,
-} from "../../styled";
+} from "../../../styled";
 
 export const TextButtonPreview = () => {
   return (
