@@ -9,6 +9,9 @@ import { DimmingPreview } from "../@freenow/wave/Dimming/Dimming";
 import { DividerPreview } from "../@freenow/wave/Divider/Divider";
 import { HelperTextPreview } from "../@freenow/wave/HelperText/HelperText";
 import { Box } from "@freenow/wave";
+import { InfoBannerPreview } from "../@freenow/wave/InfoBanner/InfoBanner";
+import { LabelPreview } from "../@freenow/wave/Label/Label";
+import { TagPreview } from "../@freenow/wave/Tag/Tag";
 
 export const ComponentsPreview = () => {
   return (
@@ -49,18 +52,35 @@ export const ComponentsPreview = () => {
 
       <HStack mt={10}>
         {/* Dimming */}
-        <Box maxWidth="20%" width='20%'>
+        <Box maxWidth="20%" width="20%">
           <DimmingPreview />
         </Box>
 
         {/* Divider */}
-        <Box maxWidth="20%" width='20%'>
+        <Box maxWidth="20%" width="20%">
           <DividerPreview />
         </Box>
 
         {/* HelperText */}
-        <Box maxWidth="40%" width='40%'>
+        <Box maxWidth="40%" width="40%">
           <HelperTextPreview />
+        </Box>
+      </HStack>
+
+      <HStack mt={10}>
+        {/* InfoBanner */}
+        <Box maxWidth="50%" width="50%">
+          <InfoBannerPreview />
+        </Box>
+
+        {/* Label */}
+        <Box maxWidth="20%" width="20%">
+          <LabelPreview />
+        </Box>
+
+        {/* Label */}
+        <Box maxWidth="15%" width="15%">
+          <TagPreview />
         </Box>
       </HStack>
     </>

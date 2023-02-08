@@ -16,7 +16,7 @@ export const HelperTextPreview = () => {
         <ComponentHeader>HelperText</ComponentHeader>
       </ComponentHeaderWrapper>
       <HStack>
-        <VStack>
+        <VStack mr={1}>
           <ComponentVariant>Info (Default)</ComponentVariant>
 
           <VStack>
@@ -38,13 +38,13 @@ export const HelperTextPreview = () => {
           </ComponentInvertedBackdrop>
         </VStack>
 
-        <VStack>
+        <VStack ml={1}>
           <ComponentVariant>Danger</ComponentVariant>
 
           <VStack>
             <Input label="Some input"></Input>
             <HelperText variant="danger" mt={1}>
-              Danger / error indicating helper text
+              Danger / error helper text
             </HelperText>
           </VStack>
 
@@ -54,7 +54,7 @@ export const HelperTextPreview = () => {
             <VStack>
               <Input label="Some input" inverted></Input>
               <HelperText mt={1} variant='danger' inverted>
-                Danger / error indicating helper text
+                Danger / error helper text
               </HelperText>
             </VStack>
           </ComponentInvertedBackdrop>
