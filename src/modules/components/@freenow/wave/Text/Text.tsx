@@ -4,7 +4,6 @@ import { MOCKS } from "../../../../common/constants/global";
 import {
   ComponentHeader,
   ComponentHeaderWrapper,
-  ComponentInvertedBackdrop,
   ComponentVariant,
   VStack,
 } from "../../../styled";

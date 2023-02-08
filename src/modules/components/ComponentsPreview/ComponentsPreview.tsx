@@ -6,6 +6,9 @@ import { CardPreview } from "../@freenow/wave/Card/Card";
 import { HeadlinePreview } from "../@freenow/wave/Headline/Headline";
 import { TextPreview } from "../@freenow/wave/Text/Text";
 import { DimmingPreview } from "../@freenow/wave/Dimming/Dimming";
+import { DividerPreview } from "../@freenow/wave/Divider/Divider";
+import { HelperTextPreview } from "../@freenow/wave/HelperText/HelperText";
+import { Box } from "@freenow/wave";
 
 export const ComponentsPreview = () => {
   return (
@@ -46,19 +49,19 @@ export const ComponentsPreview = () => {
 
       <HStack mt={10}>
         {/* Dimming */}
-        <ComponentContainer>
+        <Box maxWidth="20%" width='20%'>
           <DimmingPreview />
-        </ComponentContainer>
+        </Box>
 
-        {/* Headline */}
-        <ComponentContainer>
-          <HeadlinePreview />
-        </ComponentContainer>
+        {/* Divider */}
+        <Box maxWidth="20%" width='20%'>
+          <DividerPreview />
+        </Box>
 
-        {/* TextButton */}
-        <ComponentContainer>
-          <TextPreview />
-        </ComponentContainer>
+        {/* HelperText */}
+        <Box maxWidth="40%" width='40%'>
+          <HelperTextPreview />
+        </Box>
       </HStack>
     </>
   );

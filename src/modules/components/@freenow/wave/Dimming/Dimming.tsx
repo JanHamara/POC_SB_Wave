@@ -12,7 +12,7 @@ import {
 const DimmingFixedDimensions = styled(Dimming)`
     height: 15rem;
     position: static;
-    width: 21rem;
+    width: 100%;
     z-index: 0;
 `;
 
