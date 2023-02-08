@@ -5,6 +5,7 @@ import { TextButtonPreview } from "../@freenow/wave/TextButton/TextButton";
 import { CardPreview } from "../@freenow/wave/Card/Card";
 import { HeadlinePreview } from "../@freenow/wave/Headline/Headline";
 import { TextPreview } from "../@freenow/wave/Text/Text";
+import { DimmingPreview } from "../@freenow/wave/Dimming/Dimming";
 
 export const ComponentsPreview = () => {
   return (
@@ -30,6 +31,23 @@ export const ComponentsPreview = () => {
         {/* Card */}
         <ComponentContainer>
           <CardPreview />
+        </ComponentContainer>
+
+        {/* Headline */}
+        <ComponentContainer>
+          <HeadlinePreview />
+        </ComponentContainer>
+
+        {/* TextButton */}
+        <ComponentContainer>
+          <TextPreview />
+        </ComponentContainer>
+      </HStack>
+
+      <HStack mt={10}>
+        {/* Dimming */}
+        <ComponentContainer>
+          <DimmingPreview />
         </ComponentContainer>
 
         {/* Headline */}

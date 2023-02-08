@@ -19,6 +19,7 @@ export const TextPreview = () => {
       <VStack>
         <VStack>
           <ComponentVariant>Small</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="small" fontWeight="100">
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -28,11 +29,13 @@ export const TextPreview = () => {
           <ComponentVariant>
             Medium - <strong>Default Size</strong>
           </ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontWeight="100">{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
         <VStack mt={2}>
           <ComponentVariant>Large</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="100">
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -40,6 +43,7 @@ export const TextPreview = () => {
 
         <VStack mt={6}>
           <ComponentVariant>Small | Semibold</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="small" fontWeight="500">
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -47,11 +51,13 @@ export const TextPreview = () => {
 
         <VStack mt={2}>
           <ComponentVariant>Medium | Semibold</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontWeight="500">{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
         <VStack mt={2}>
           <ComponentVariant>Large | Semibold</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500">
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -78,6 +84,7 @@ export const TextPreview = () => {
 
         <VStack mt={6}>
           <ComponentVariant>Small | Secondary</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="small" fontWeight="500" secondary>
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -87,11 +94,13 @@ export const TextPreview = () => {
           <ComponentVariant>
             Medium | Secondary
           </ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontWeight="500" secondary>{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
         <VStack mt={2}>
           <ComponentVariant>Large | Secondary</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500" secondary>
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -99,6 +108,7 @@ export const TextPreview = () => {
 
         <VStack mt={6}>
           <ComponentVariant>Small | Disabled</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="small" fontWeight="500" disabled>
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>
@@ -108,11 +118,13 @@ export const TextPreview = () => {
           <ComponentVariant>
             Medium | Disabled
           </ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontWeight="500" disabled>{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
         <VStack mt={2}>
           <ComponentVariant>Large | Disabled</ComponentVariant>
+          {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500" disabled>
             {MOCKS.LOREM_IPSUM.SMALL}
           </Text>

@@ -1,5 +1,4 @@
 import { Headline } from "@freenow/wave";
-
 import {
   ComponentHeader,
   ComponentHeaderWrapper,
