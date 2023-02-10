@@ -16,6 +16,10 @@ import { InlineSpinnerPreview } from "../@freenow/wave/InlineSpinner/InlineSpinn
 import { LinkPreview } from "../@freenow/wave/Link/Link";
 import { ModalPreview } from "../@freenow/wave/Modal/Modal";
 import { OffcanvasPreview } from "../@freenow/wave/Offcanvas/Offcanvas";
+import { PaginationPreview } from "../@freenow/wave/Pagination/Pagination";
+import { PopoverPreview } from "../@freenow/wave/Popover/Popover";
+import { TabBarPreview } from "../@freenow/wave/TabBar/TabBar";
+import { TooltipPreview } from "../@freenow/wave/Tooltip/Tooltip";
 
 export const ComponentsPreview = () => {
   return (
@@ -106,6 +110,28 @@ export const ComponentsPreview = () => {
         {/* Offcanvas */}
         <Box maxWidth="15%" width="15%">
           <OffcanvasPreview />
+        </Box>
+      </HStack>
+
+      <HStack mt={10}>
+        {/* Pagination */}
+        <Box maxWidth="20%" width="20%">
+          <PaginationPreview />
+        </Box>
+
+        {/* Popover */}
+        <Box maxWidth="15%" width="15%">
+          <PopoverPreview />
+        </Box>
+
+        {/* TabBar */}
+        <Box maxWidth="20%" width="20%">
+          <TabBarPreview />
+        </Box>
+
+        {/* Tooltip */}
+        <Box maxWidth="20%" width="20%">
+          <TooltipPreview />
         </Box>
       </HStack>
     </>
