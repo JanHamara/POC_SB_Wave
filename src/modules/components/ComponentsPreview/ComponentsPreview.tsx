@@ -12,6 +12,8 @@ import { Box } from "@freenow/wave";
 import { InfoBannerPreview } from "../@freenow/wave/InfoBanner/InfoBanner";
 import { LabelPreview } from "../@freenow/wave/Label/Label";
 import { TagPreview } from "../@freenow/wave/Tag/Tag";
+import { InlineSpinnerPreview } from "../@freenow/wave/InlineSpinner/InlineSpinner";
+import { LinkPreview } from "../@freenow/wave/Link/Link";
 
 export const ComponentsPreview = () => {
   return (
@@ -78,8 +80,25 @@ export const ComponentsPreview = () => {
           <LabelPreview />
         </Box>
 
-        {/* Label */}
+        {/* Tag */}
         <Box maxWidth="15%" width="15%">
+          <TagPreview />
+        </Box>
+      </HStack>
+
+      <HStack mt={10}>
+        {/* InlineSpinner */}
+        <Box maxWidth="10%" width="10%">
+          <InlineSpinnerPreview />
+        </Box>
+
+        {/* Label */}
+        <Box maxWidth="40%" width="40%">
+          <LinkPreview />
+        </Box>
+
+        {/* Tag */}
+        <Box maxWidth="30%" width="50%">
           <TagPreview />
         </Box>
       </HStack>
