@@ -1,4 +1,4 @@
-import { HStack, ComponentContainer } from "../styled";
+import { HStack, ComponentContainer, VStack } from "../styled";
 import { AccordionPreview } from "../@freenow/wave/Accordion/Accordion";
 import { ButtonPreview } from "../@freenow/wave/Button/Button";
 import { TextButtonPreview } from "../@freenow/wave/TextButton/TextButton";
@@ -15,6 +15,7 @@ import { TagPreview } from "../@freenow/wave/Tag/Tag";
 import { InlineSpinnerPreview } from "../@freenow/wave/InlineSpinner/InlineSpinner";
 import { LinkPreview } from "../@freenow/wave/Link/Link";
 import { ModalPreview } from "../@freenow/wave/Modal/Modal";
+import { OffcanvasPreview } from "../@freenow/wave/Offcanvas/Offcanvas";
 
 export const ComponentsPreview = () => {
   return (
@@ -83,24 +84,28 @@ export const ComponentsPreview = () => {
 
         {/* Tag */}
         <Box maxWidth="15%" width="15%">
-          <TagPreview />
+          <VStack>
+            <TagPreview />
+            <Box mt={8}></Box>
+            <InlineSpinnerPreview />
+          </VStack>
         </Box>
       </HStack>
 
       <HStack mt={10}>
-        {/* InlineSpinner */}
-        <Box maxWidth="10%" width="10%">
-          <InlineSpinnerPreview />
-        </Box>
-
         {/* Link */}
         <Box maxWidth="40%" width="40%">
           <LinkPreview />
         </Box>
 
         {/* Modal */}
-        <Box maxWidth="30%" width="50%">
+        <Box maxWidth="15%" width="15%">
           <ModalPreview />
+        </Box>
+
+        {/* Offcanvas */}
+        <Box maxWidth="15%" width="15%">
+          <OffcanvasPreview />
         </Box>
       </HStack>
     </>

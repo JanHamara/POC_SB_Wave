@@ -1,4 +1,4 @@
-import { Box, Button, Headline, Modal, Text, TextButton } from "@freenow/wave";
+import { Box, Button, Headline, Offcanvas, Text, TextButton } from "@freenow/wave";
 import { useState } from "react";
 import {
   ComponentHeader,
@@ -7,15 +7,14 @@ import {
   VStack,
 } from "../../../styled";
 
-export const ModalPreview = () => {
+export const OffcanvasPreview = () => {
   const [isEnabled, setIsEnabled] = useState(false);
-  const [isFullscreenEnabled, setIsFullscreenEnabled] = useState(false);
   const [IsNonDismissableEnabled, setIsNonDismissableEnabled] = useState(false);
 
   return (
     <VStack>
       <ComponentHeaderWrapper>
-        <ComponentHeader>Modal</ComponentHeader>
+        <ComponentHeader>Offcanvas</ComponentHeader>
       </ComponentHeaderWrapper>
       <VStack>
         <VStack>
@@ -27,12 +26,12 @@ export const ModalPreview = () => {
               onClick={() => setIsEnabled(true)}
               variant="secondary"
             >
-              {isEnabled ? "Close modal" : "Open modal"}
+              {isEnabled ? "Close offcanvas" : "Open offcanvas"}
             </Button>
           </Box>
 
           {isEnabled && (
-            <Modal onClose={() => setIsEnabled(false)}>
+            <Offcanvas onClose={() => setIsEnabled(false)}>
               <Headline as="h2">Add Note</Headline>
               <Text as="p" my={3}>
                 Ensure that all participants are aware of the change.
@@ -41,36 +40,7 @@ export const ModalPreview = () => {
               <TextButton onClick={() => setIsEnabled(false)}>
                 Cancel
               </TextButton>
-            </Modal>
-          )}
-        </VStack>
-
-        <VStack mt={4}>
-          <ComponentVariant>Full-screen</ComponentVariant>
-
-          <Box width="200px" mb={2}>
-            <Button
-              size="small"
-              onClick={() => setIsFullscreenEnabled(true)}
-              variant="secondary"
-            >
-              {isEnabled ? "Close modal" : "Open modal"}
-            </Button>
-          </Box>
-
-          {isFullscreenEnabled && (
-            <Modal onClose={() => setIsFullscreenEnabled(false)} fullscreen>
-              <Headline as="h2">Add Note</Headline>
-              <Text as="p" my={3}>
-                Ensure that all participants are aware of the change.
-              </Text>
-              <Button onClick={() => setIsFullscreenEnabled(false)}>
-                Add Note
-              </Button>
-              <TextButton onClick={() => setIsFullscreenEnabled(false)}>
-                Cancel
-              </TextButton>
-            </Modal>
+            </Offcanvas>
           )}
         </VStack>
 
@@ -83,12 +53,12 @@ export const ModalPreview = () => {
               onClick={() => setIsNonDismissableEnabled(true)}
               variant="secondary"
             >
-              {isEnabled ? "Close modal" : "Open modal"}
+              {isEnabled ? "Close non-dismissible" : "Open non-dismissible"}
             </Button>
           </Box>
 
           {IsNonDismissableEnabled && (
-            <Modal onClose={() => setIsNonDismissableEnabled(false)} dismissible={false}>
+            <Offcanvas onClose={() => setIsNonDismissableEnabled(false)} dismissible={false}>
               <Headline as="h2">Add Note</Headline>
               <Text as="p" my={3}>
                 Ensure that all participants are aware of the change.
@@ -99,7 +69,7 @@ export const ModalPreview = () => {
               <TextButton onClick={() => setIsNonDismissableEnabled(false)}>
                 Cancel
               </TextButton>
-            </Modal>
+            </Offcanvas>
           )}
         </VStack>
       </VStack>
