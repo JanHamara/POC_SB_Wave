@@ -14,7 +14,7 @@ const SectionBox = styled(Box)`
   justify-content: center;
   align-items: center;
   border: 1px solid #333333;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 `
 
 export const DividerPreview = () => {

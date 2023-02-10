@@ -28,8 +28,8 @@ export const ComponentVariant = styled(Text).attrs({
   color: #aaaaaa
 `;
 export const ComponentInvertedBackdrop = styled(Box).attrs({
-  /* bg: "#bbbbbb", */
-  bg: '#001E3E',
+  // This is background color on which inverted components should look good, it is the base for dark mode
+  bg: '#201A1A',
   p: 2,
 })``;
 
