@@ -14,6 +14,7 @@ import { LabelPreview } from "../@freenow/wave/Label/Label";
 import { TagPreview } from "../@freenow/wave/Tag/Tag";
 import { InlineSpinnerPreview } from "../@freenow/wave/InlineSpinner/InlineSpinner";
 import { LinkPreview } from "../@freenow/wave/Link/Link";
+import { ModalPreview } from "../@freenow/wave/Modal/Modal";
 
 export const ComponentsPreview = () => {
   return (
@@ -92,14 +93,14 @@ export const ComponentsPreview = () => {
           <InlineSpinnerPreview />
         </Box>
 
-        {/* Label */}
+        {/* Link */}
         <Box maxWidth="40%" width="40%">
           <LinkPreview />
         </Box>
 
-        {/* Tag */}
+        {/* Modal */}
         <Box maxWidth="30%" width="50%">
-          <TagPreview />
+          <ModalPreview />
         </Box>
       </HStack>
     </>
