@@ -1,25 +1,27 @@
-import { HStack, ComponentContainer, VStack } from "../styled";
-import { AccordionPreview } from "../@freenow/wave/Accordion/Accordion";
-import { ButtonPreview } from "../@freenow/wave/Button/Button";
-import { TextButtonPreview } from "../@freenow/wave/TextButton/TextButton";
-import { CardPreview } from "../@freenow/wave/Card/Card";
-import { HeadlinePreview } from "../@freenow/wave/Headline/Headline";
-import { TextPreview } from "../@freenow/wave/Text/Text";
-import { DimmingPreview } from "../@freenow/wave/Dimming/Dimming";
-import { DividerPreview } from "../@freenow/wave/Divider/Divider";
-import { HelperTextPreview } from "../@freenow/wave/HelperText/HelperText";
 import { Box } from "@freenow/wave";
-import { InfoBannerPreview } from "../@freenow/wave/InfoBanner/InfoBanner";
-import { LabelPreview } from "../@freenow/wave/Label/Label";
-import { TagPreview } from "../@freenow/wave/Tag/Tag";
-import { InlineSpinnerPreview } from "../@freenow/wave/InlineSpinner/InlineSpinner";
-import { LinkPreview } from "../@freenow/wave/Link/Link";
-import { ModalPreview } from "../@freenow/wave/Modal/Modal";
-import { OffcanvasPreview } from "../@freenow/wave/Offcanvas/Offcanvas";
-import { PaginationPreview } from "../@freenow/wave/Pagination/Pagination";
-import { PopoverPreview } from "../@freenow/wave/Popover/Popover";
-import { TabBarPreview } from "../@freenow/wave/TabBar/TabBar";
-import { TooltipPreview } from "../@freenow/wave/Tooltip/Tooltip";
+import {
+  AccordionPreview,
+  ButtonPreview,
+  CardPreview,
+  DimmingPreview,
+  DividerPreview,
+  HeadlinePreview,
+  HelperTextPreview,
+  InfoBannerPreview,
+  InlineSpinnerPreview,
+  LabelPreview,
+  LinkPreview,
+  ModalPreview,
+  OffcanvasPreview,
+  PaginationPreview,
+  PopoverPreview,
+  TabBarPreview,
+  TagPreview,
+  TextButtonPreview,
+  TextPreview,
+  TooltipPreview,
+} from "../@freenow/wave";
+import { HStack, ComponentContainer, VStack } from "../styled";
 
 export const ComponentsPreview = () => {
   return (
