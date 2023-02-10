@@ -16,7 +16,7 @@ export const InfoBannerPreview = () => {
       </ComponentHeaderWrapper>
 
       <HStack>
-        <VStack mr={2}>
+        <VStack mr={4}>
           <VStack>
             <ComponentVariant>Info (Default)</ComponentVariant>
             <InfoBanner
@@ -61,7 +61,7 @@ export const InfoBannerPreview = () => {
           </VStack>
         </VStack>
 
-        <VStack ml={2}>
+        <VStack ml={4}>
           <VStack>
             <ComponentVariant>Info | Emphasized</ComponentVariant>
             <InfoBanner

@@ -16,7 +16,7 @@ export const LinkPreview = () => {
         <ComponentHeader>Link</ComponentHeader>
       </ComponentHeaderWrapper>
       <HStack>
-        <VStack mr={2}>
+        <VStack mr={4}>
           <VStack>
             <ComponentVariant>Default - 1rem</ComponentVariant>
 

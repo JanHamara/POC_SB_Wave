@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SITE_CONTENT_LAYOUT } from '../../common/constants/global'
+import { SITE_CONTENT_LAYOUT } from '../../../common/constants/global'
 
 export default styled.div`
     margin: 0 auto;

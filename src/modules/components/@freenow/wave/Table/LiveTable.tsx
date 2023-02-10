@@ -62,7 +62,7 @@ export const LiveTable = () => {
         </Select>
       </HStack>
 
-      <Box mt={2}>
+      <Box mt={4}>
         <Table
           rowStyle={rowStyle}
           columnSpace={columnSpace}

@@ -13,7 +13,7 @@ export const Header = () => {
               width="1px"
               height={Spaces[4]}
               background="#444444"
-              mx={2}
+              mx={4}
             ></Box>
             <Text>Components Preview</Text>
           </Box>

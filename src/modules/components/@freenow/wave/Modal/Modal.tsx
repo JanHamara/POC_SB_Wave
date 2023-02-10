@@ -21,7 +21,7 @@ export const ModalPreview = () => {
         <VStack>
           <ComponentVariant>Default</ComponentVariant>
 
-          <Box width="200px" mb={2}>
+          <Box width="200px" mb={4}>
             <Button
               size="small"
               onClick={() => setIsEnabled(true)}
@@ -48,7 +48,7 @@ export const ModalPreview = () => {
         <VStack mt={4}>
           <ComponentVariant>Full-screen</ComponentVariant>
 
-          <Box width="200px" mb={2}>
+          <Box width="200px" mb={4}>
             <Button
               size="small"
               onClick={() => setIsFullscreenEnabled(true)}
@@ -77,7 +77,7 @@ export const ModalPreview = () => {
         <VStack mt={4}>
           <ComponentVariant>Non-dismissible</ComponentVariant>
 
-          <Box width="200px" mb={2}>
+          <Box width="200px" mb={4}>
             <Button
               size="small"
               onClick={() => setIsNonDismissableEnabled(true)}

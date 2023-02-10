@@ -9,19 +9,24 @@ import {
   HelperTextPreview,
   InfoBannerPreview,
   InlineSpinnerPreview,
+  InputPreview,
   LabelPreview,
   LinkPreview,
   ModalPreview,
   OffcanvasPreview,
   PaginationPreview,
+  PasswordPreview,
+  PhoneInputPreview,
   PopoverPreview,
   TabBarPreview,
+  TablePreview,
   TagPreview,
   TextButtonPreview,
   TextPreview,
   TooltipPreview,
 } from "../@freenow/wave";
-import { TablePreview } from "../@freenow/wave/Table/Table";
+import { TextareaPreview } from "../@freenow/wave/Form/Textarea/Textarea";
+
 import {
   HStack,
   ComponentContainer,
@@ -150,6 +155,7 @@ export const ComponentsPreview = () => (
       </Box>
     </HStack>
 
+    {/* Form Elements */}
     <VStack mt={10}>
       <Box width="100%">
         <ComponentHeaderWrapper>
@@ -158,26 +164,47 @@ export const ComponentsPreview = () => (
 
         <HStack mt={4}>
           {/* Input */}
-          <Box maxWidth="20%" width="20%">
-            <PaginationPreview />
+          <ComponentContainer>
+            <InputPreview />
+          </ComponentContainer>
+
+          {/* Password */}
+          <ComponentContainer>
+            <PasswordPreview />
+          </ComponentContainer>
+
+          {/* PhoneInput */}
+          <ComponentContainer>
+            <PasswordPreview />
+          </ComponentContainer>
+        </HStack>
+
+        <HStack mt={10}>
+          {/* Input */}
+          <Box maxWidth="50%" width="50%">
+            <PhoneInputPreview />
           </Box>
 
           {/* Password */}
-          <Box maxWidth="15%" width="15%">
-            <PopoverPreview />
+          <Box maxWidth="20%" width="40%">
+            <TextareaPreview />
           </Box>
 
-          {/* TabBar */}
-          <Box maxWidth="20%" width="20%">
-            <TabBarPreview />
-          </Box>
-
-          {/* Tooltip */}
-          <Box maxWidth="20%" width="20%">
-            <TooltipPreview />
+          {/* Password */}
+          <Box maxWidth="20%" width="40%">
+            <TextareaPreview />
           </Box>
         </HStack>
       </Box>
     </VStack>
   </>
 );
+
+// Datepicker
+// Filepicker
+// Search
+// Select
+// SelectList
+// Toggle
+// Checkbox
+// RadioButton

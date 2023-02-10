@@ -32,7 +32,7 @@ export const DimmingPreview = () => {
         <VStack>
           <ComponentVariant>Default</ComponentVariant>
         
-        <Box width='200px' mb={2}>
+        <Box width='200px' mb={4}>
             <Button size='small' onClick={() => setIsEnabled(!isEnabled)} variant='secondary' style={{ zIndex: 9999, position: 'relative' }}>{ isEnabled ? 'Disable' : 'Enable'}</Button>
         </Box>
 

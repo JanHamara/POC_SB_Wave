@@ -24,7 +24,7 @@ export const TextPreview = () => {
           </Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>
             Medium - <strong>Default Size</strong>
           </ComponentVariant>
@@ -32,7 +32,7 @@ export const TextPreview = () => {
           <Text fontWeight="100">{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Large</ComponentVariant>
           {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="100">
@@ -48,13 +48,13 @@ export const TextPreview = () => {
           </Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Medium | Semibold</ComponentVariant>
           {/* @ts-ignore */}
           <Text fontWeight="500">{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Large | Semibold</ComponentVariant>
           {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500">
@@ -69,12 +69,12 @@ export const TextPreview = () => {
           </Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Medium | Bold</ComponentVariant>
           <Text fontWeight="bold">{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Large | Bold</ComponentVariant>
           <Text fontSize="large" fontWeight="bold">
             {MOCKS.LOREM_IPSUM.SMALL}
@@ -89,7 +89,7 @@ export const TextPreview = () => {
           </Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>
             Medium | Secondary
           </ComponentVariant>
@@ -97,7 +97,7 @@ export const TextPreview = () => {
           <Text fontWeight="500" secondary>{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Large | Secondary</ComponentVariant>
           {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500" secondary>
@@ -113,7 +113,7 @@ export const TextPreview = () => {
           </Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>
             Medium | Disabled
           </ComponentVariant>
@@ -121,7 +121,7 @@ export const TextPreview = () => {
           <Text fontWeight="500" disabled>{MOCKS.LOREM_IPSUM.SMALL}</Text>
         </VStack>
 
-        <VStack mt={2}>
+        <VStack mt={4}>
           <ComponentVariant>Large | Disabled</ComponentVariant>
           {/* @ts-ignore */}
           <Text fontSize="large" fontWeight="500" disabled>
@@ -139,7 +139,7 @@ export const TextPreview = () => {
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>
               Medium - <strong>Default Size</strong>
             </ComponentVariant>
@@ -148,7 +148,7 @@ export const TextPreview = () => {
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>Large</ComponentVariant>
             <Text fontSize="large" fontWeight="100" inverted>
               {MOCKS.LOREM_IPSUM.SMALL}
@@ -162,14 +162,14 @@ export const TextPreview = () => {
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>Medium | Semibold</ComponentVariant>
             <Text fontWeight="500" inverted>
               {MOCKS.LOREM_IPSUM.SMALL}
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>Large | Semibold</ComponentVariant>
             <Text fontSize="large" fontWeight="500" inverted>
               {MOCKS.LOREM_IPSUM.SMALL}
@@ -183,14 +183,14 @@ export const TextPreview = () => {
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>Medium | Bold</ComponentVariant>
             <Text fontWeight="bold" inverted>
               {MOCKS.LOREM_IPSUM.SMALL}
             </Text>
           </VStack>
 
-          <VStack mt={2}>
+          <VStack mt={4}>
             <ComponentVariant>Large | Bold</ComponentVariant>
             <Text fontSize="large" fontWeight="bold" inverted>
               {MOCKS.LOREM_IPSUM.SMALL}

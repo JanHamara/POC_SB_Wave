@@ -20,7 +20,7 @@ export const OffcanvasPreview = () => {
         <VStack>
           <ComponentVariant>Default</ComponentVariant>
 
-          <Box width="200px" mb={2}>
+          <Box width="200px" mb={4}>
             <Button
               size="small"
               onClick={() => setIsEnabled(true)}
@@ -47,7 +47,7 @@ export const OffcanvasPreview = () => {
         <VStack mt={4}>
           <ComponentVariant>Non-dismissible</ComponentVariant>
 
-          <Box width="200px" mb={2}>
+          <Box width="200px" mb={4}>
             <Button
               size="small"
               onClick={() => setIsNonDismissableEnabled(true)}
