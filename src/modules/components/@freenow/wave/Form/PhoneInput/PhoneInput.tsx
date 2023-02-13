@@ -1,11 +1,10 @@
-import { Headline, HelperText, PhoneInput } from "@freenow/wave";
+import { HelperText, PhoneInput } from "@freenow/wave";
 import {
   VStack,
   ComponentHeaderWrapper,
   ComponentHeader,
   ComponentVariant,
   HStack,
-  ComponentInvertedBackdrop,
 } from "../../../../styled";
 
 const countryMock = {
@@ -28,7 +27,7 @@ export const PhoneInputPreview = () => {
             country={countryMock}
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
           />
         </VStack>
 
@@ -39,7 +38,7 @@ export const PhoneInputPreview = () => {
             country={countryMock}
             variant="bottom-lined"
             label="Phone Number"
-            width="270px"
+            width="260px"
             id="phone"
           />
         </VStack>
@@ -53,7 +52,7 @@ export const PhoneInputPreview = () => {
             country={countryMock}
             size="small"
             label="Phone Number"
-            width="270px"
+            width="260px"
             id="phone"
           />
         </VStack>
@@ -66,7 +65,7 @@ export const PhoneInputPreview = () => {
             size="small"
             variant="bottom-lined"
             label="Phone Number"
-            width="270px"
+            width="260px"
             id="phone"
           />
         </VStack>
@@ -80,7 +79,7 @@ export const PhoneInputPreview = () => {
             country={countryMock}
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             error={true}
           />
         </VStack>
@@ -93,7 +92,7 @@ export const PhoneInputPreview = () => {
             variant="bottom-lined"
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             error={true}
           />
         </VStack>
@@ -108,7 +107,7 @@ export const PhoneInputPreview = () => {
             size="small"
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             error={true}
           />
         </VStack>
@@ -122,7 +121,7 @@ export const PhoneInputPreview = () => {
             size="small"
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             error={true}
           />
         </VStack>
@@ -136,7 +135,7 @@ export const PhoneInputPreview = () => {
             country={countryMock}
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             disabled
           />
         </VStack>
@@ -149,7 +148,7 @@ export const PhoneInputPreview = () => {
             variant="bottom-lined"
             label="Phone Number"
             id="phone"
-            width="270px"
+            width="260px"
             disabled
           />
         </VStack>

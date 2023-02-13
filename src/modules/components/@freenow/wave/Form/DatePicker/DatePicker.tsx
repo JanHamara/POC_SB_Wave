@@ -1,4 +1,5 @@
-import { Headline } from "@freenow/wave";
+import React, { useState } from "react";
+import { Box, DatePicker, DateRangePicker, HelperText } from "@freenow/wave";
 
 import {
   ComponentHeader,
@@ -9,6 +10,9 @@ import {
 } from "../../../../styled";
 
 export const DatePickerPreview = () => {
+  const [date, setDate] = useState();
+  const [dateRange, setDateRange] = useState();
+
   return (
     <VStack>
       <ComponentHeaderWrapper>
@@ -18,15 +22,45 @@ export const DatePickerPreview = () => {
         <VStack>
           <ComponentVariant>Default</ComponentVariant>
 
-          <Headline>DatePicker</Headline>
+          <DatePicker
+            value={date}
+            /* @ts-ignore */
+            onChange={setDate}
+            label="Expiry Date"
+            placeholder="DD/MM/YYYY"
+          ></DatePicker>
         </VStack>
 
-        <VStack mt={6}>
-          <ComponentVariant>- Variant</ComponentVariant>
+        <VStack mt={4}>
+          <ComponentVariant> - Disabled</ComponentVariant>
           <HStack>
-            <Headline>DatePicker</Headline>
+            <DatePicker disabled></DatePicker>
           </HStack>
         </VStack>
+
+        <VStack mt={4}>
+          <ComponentVariant>Date Range Picker</ComponentVariant>
+          <HStack>
+            <DateRangePicker
+              value={dateRange}
+              /* @ts-ignore */
+              onChange={setDateRange}
+            ></DateRangePicker>
+          </HStack>
+        </VStack>
+
+        <VStack mt={4}>
+          <ComponentVariant> - Disabled</ComponentVariant>
+          <HStack>
+            <DateRangePicker disabled></DateRangePicker>
+          </HStack>
+        </VStack>
+
+        <Box mt={4}>
+          <HelperText variant="danger">
+            We don't have inverted variant for DatePicker
+          </HelperText>
+        </Box>
       </VStack>
     </VStack>
   );

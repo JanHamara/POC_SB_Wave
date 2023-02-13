@@ -1,4 +1,4 @@
-import { Box } from "@freenow/wave";
+import { Box, SelectList } from "@freenow/wave";
 import {
   AccordionPreview,
   ButtonPreview,
@@ -25,7 +25,11 @@ import {
   TextPreview,
   TooltipPreview,
 } from "../@freenow/wave";
+import { DatePickerPreview } from "../@freenow/wave/Form/DatePicker/DatePicker";
+import { FilePickerPreview } from "../@freenow/wave/Form/FilePicker/FilePicker";
 import { SearchPreview } from "../@freenow/wave/Form/Search/Search";
+import { SelectPreview } from "../@freenow/wave/Form/Select/Select";
+import { SelectListPreview } from "../@freenow/wave/Form/SelectList/SelectList";
 import { TextareaPreview } from "../@freenow/wave/Form/Textarea/Textarea";
 
 import {
@@ -174,25 +178,53 @@ export const ComponentsPreview = () => (
             <PasswordPreview />
           </ComponentContainer>
 
-          {/* PhoneInput */}
+          {/* Select */}
           <ComponentContainer>
-            <PasswordPreview />
+            <SelectPreview />
           </ComponentContainer>
         </HStack>
 
         <HStack mt={10}>
-          {/* Input */}
-          <Box maxWidth="45%" width="45%">
+          {/* SelectList */}
+          <ComponentContainer>
+            <SelectListPreview />
+          </ComponentContainer>
+
+          {/* PhoneInput */}
+          <Box maxWidth="43%" width="43%">
             <PhoneInputPreview />
           </Box>
 
-          {/* Password */}
-          <Box maxWidth="22%" width="22%">
+          {/* Textarea */}
+          <Box maxWidth="17%" width="17%">
             <TextareaPreview />
           </Box>
+        </HStack>
 
-          {/* Password */}
-          <Box maxWidth="22%" width="22%">
+        <HStack mt={10}>
+          {/* Search */}
+          <Box maxWidth="20%" width="20%">
+            <SearchPreview />
+          </Box>
+
+          {/* DatePicker & FilePicker */}
+          <Box maxWidth="20%" width="20%">
+            <VStack>
+              <DatePickerPreview />
+
+              <Box mt={4}>
+                <FilePickerPreview />
+              </Box>
+            </VStack>
+          </Box>
+
+          {/* Search */}
+          <Box maxWidth="20%" width="20%">
+            <SearchPreview />
+          </Box>
+
+          {/* Search */}
+          <Box maxWidth="20%" width="20%">
             <SearchPreview />
           </Box>
         </HStack>
@@ -201,11 +233,6 @@ export const ComponentsPreview = () => (
   </>
 );
 
-// Datepicker
-// Filepicker
-// Search
-// Select
-// SelectList
 // Toggle
 // Checkbox
 // RadioButton

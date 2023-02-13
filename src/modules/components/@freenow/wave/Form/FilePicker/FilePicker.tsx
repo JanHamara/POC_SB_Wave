@@ -1,4 +1,4 @@
-import { Headline } from "@freenow/wave";
+import { Box, FilePicker, HelperText } from "@freenow/wave";
 
 import {
   ComponentHeader,
@@ -18,15 +18,51 @@ export const FilePickerPreview = () => {
         <VStack>
           <ComponentVariant>Default</ComponentVariant>
 
-          <Headline>FilePicker</Headline>
+          <FilePicker
+            accept="image/png, image/jpeg"
+            buttonText="Browse files"
+            label="A picture of you"
+            name="avatar"
+            onChange={(e) => console.log("onChange", e)}
+            onFileChange={(file, e) => console.log("onFileChange", file, e)}
+          />
         </VStack>
 
-        <VStack mt={6}>
-          <ComponentVariant>- Variant</ComponentVariant>
+        <VStack mt={4}>
+          <ComponentVariant>Disabled</ComponentVariant>
           <HStack>
-            <Headline>FilePicker</Headline>
+            <FilePicker
+              accept="image/png, image/jpeg"
+              buttonText="Browse files"
+              label="A picture of you"
+              name="avatar"
+              onChange={(e) => console.log("onChange", e)}
+              onFileChange={(file, e) => console.log("onFileChange", file, e)}
+              disabled
+            />
           </HStack>
         </VStack>
+
+        <VStack mt={4}>
+          <ComponentVariant>Error</ComponentVariant>
+          <HStack>
+            <FilePicker
+              accept="image/png, image/jpeg"
+              buttonText="Browse files"
+              label="A picture of you"
+              name="avatar"
+              onChange={(e) => console.log("onChange", e)}
+              onFileChange={(file, e) => console.log("onFileChange", file, e)}
+              error
+            />
+          </HStack>
+        </VStack>
+
+        <Box mt={4}>
+          <HelperText variant="danger">
+            We don't have inverted variant for FilePicker
+          </HelperText>
+        </Box>
       </VStack>
     </VStack>
   );

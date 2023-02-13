@@ -62,7 +62,7 @@ export const TextareaPreview = () => {
 
             <Textarea
               placeholder="Type here..."
-              width="200px"
+              width="184px"
               label="Message"
               id="email"
               inverted
@@ -76,7 +76,7 @@ export const TextareaPreview = () => {
 
             <Textarea
               placeholder="Type here..."
-              width="200px"
+              width="184px"
               label="Message"
               id="email"
               disabled
