@@ -25,12 +25,15 @@ import {
   TextPreview,
   TooltipPreview,
 } from "../@freenow/wave";
+import { CheckboxPreview } from "../@freenow/wave/Form/Checkbox/Checkbox";
 import { DatePickerPreview } from "../@freenow/wave/Form/DatePicker/DatePicker";
 import { FilePickerPreview } from "../@freenow/wave/Form/FilePicker/FilePicker";
+import { RadioButtonPreview } from "../@freenow/wave/Form/RadioButton/RadioButton";
 import { SearchPreview } from "../@freenow/wave/Form/Search/Search";
 import { SelectPreview } from "../@freenow/wave/Form/Select/Select";
 import { SelectListPreview } from "../@freenow/wave/Form/SelectList/SelectList";
 import { TextareaPreview } from "../@freenow/wave/Form/Textarea/Textarea";
+import { TogglePreview } from "../@freenow/wave/Form/Toggle/Toggle";
 
 import {
   HStack,
@@ -218,21 +221,23 @@ export const ComponentsPreview = () => (
             </VStack>
           </Box>
 
-          {/* Search */}
+          {/* Toggle */}
           <Box maxWidth="20%" width="20%">
-            <SearchPreview />
+            <TogglePreview />
           </Box>
 
-          {/* Search */}
+          {/* RadioButton & Checkbox */}
           <Box maxWidth="20%" width="20%">
-            <SearchPreview />
+            <VStack>
+              <RadioButtonPreview />
+
+              <Box mt={6}>
+                <CheckboxPreview />
+              </Box>
+            </VStack>
           </Box>
         </HStack>
       </Box>
     </VStack>
   </>
 );
-
-// Toggle
-// Checkbox
-// RadioButton

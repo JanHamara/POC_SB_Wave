@@ -1,4 +1,4 @@
-import { Headline } from "@freenow/wave";
+import { Box, HelperText, Toggle } from "@freenow/wave";
 
 import {
   ComponentHeader,
@@ -15,19 +15,43 @@ export const TogglePreview = () => {
         <ComponentHeader>Toggle</ComponentHeader>
       </ComponentHeaderWrapper>
       <VStack>
-        <VStack>
-          <ComponentVariant>Default</ComponentVariant>
+        <ComponentVariant>Default</ComponentVariant>
 
-          <Headline>Toggle</Headline>
-        </VStack>
-
-        <VStack mt={6}>
-          <ComponentVariant>- Variant</ComponentVariant>
-          <HStack>
-            <Headline>Toggle</Headline>
-          </HStack>
-        </VStack>
+        <HStack>
+          <Toggle />
+          <Toggle checked />
+        </HStack>
       </VStack>
+
+      <VStack mt={4}>
+        <ComponentVariant>Error</ComponentVariant>
+        <HStack>
+          <Toggle error />
+          <Toggle checked error />
+        </HStack>
+      </VStack>
+
+      <VStack mt={4}>
+        <ComponentVariant>Disabled</ComponentVariant>
+        <HStack>
+          <Toggle disabled />
+          <Toggle checked disabled />
+        </HStack>
+      </VStack>
+
+      <VStack mt={4}>
+        <ComponentVariant>With label</ComponentVariant>
+        <HStack>
+          <Toggle label="Label" />
+          <Toggle checked label="Label" />
+        </HStack>
+      </VStack>
+
+      <Box mt={4}>
+        <HelperText variant="danger">
+          We don't have inverted variants for Toggle
+        </HelperText>
+      </Box>
     </VStack>
   );
 };
