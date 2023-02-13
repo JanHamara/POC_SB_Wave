@@ -25,6 +25,7 @@ import {
   TextPreview,
   TooltipPreview,
 } from "../@freenow/wave";
+import { SearchPreview } from "../@freenow/wave/Form/Search/Search";
 import { TextareaPreview } from "../@freenow/wave/Form/Textarea/Textarea";
 
 import {
@@ -181,18 +182,18 @@ export const ComponentsPreview = () => (
 
         <HStack mt={10}>
           {/* Input */}
-          <Box maxWidth="50%" width="50%">
+          <Box maxWidth="45%" width="45%">
             <PhoneInputPreview />
           </Box>
 
           {/* Password */}
-          <Box maxWidth="20%" width="40%">
+          <Box maxWidth="22%" width="22%">
             <TextareaPreview />
           </Box>
 
           {/* Password */}
-          <Box maxWidth="20%" width="40%">
-            <TextareaPreview />
+          <Box maxWidth="22%" width="22%">
+            <SearchPreview />
           </Box>
         </HStack>
       </Box>
